@@ -17,9 +17,10 @@ Allowing root login over SSH increases the risk of brute-force attacks. It is re
    PermitRootLogin yes
    
 3. Change it to:
+    ```bash
    PermitRootLogin no
    
-4. Save the file and restart the SSH service:
+5. Save the file and restart the SSH service:
    sudo systemctl restart sshd
 
 ### 2. **Enable Key-Based Authentication**
